@@ -63,14 +63,15 @@ $ npx prettier --write .
 src/
   components/
     HierarchialTable/
-      HierarchicalTable.tsx
+      index.tsx
       HierarchicalTable.module.scss
       messages.ts
-    Toaster.tsx
+  Toaster/
+    index.tsx
     Toaster.module.scss
   App.tsx
   main.tsx
-  index.css
+  index.scss
 ```
 
 ## 📝 License
