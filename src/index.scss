@@ -29,7 +29,7 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80");
+  background-image: url("https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1500&q=80"); // clear billing/invoice themed image
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,6 +53,8 @@ button {
 }
 button:hover {
   border-color: #646cff;
+  background-color: #2a2a88;
+  color: #fff;
 }
 button:focus,
 button:focus-visible {
