@@ -1,0 +1,15 @@
+.toaster {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  background: #ff3b3b;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #aaa;
+  z-index: 9999;
+  font-weight: 500;
+  font-size: 1.05em;
+  letter-spacing: 0.02em;
+  transition: opacity 0.3s;
+}

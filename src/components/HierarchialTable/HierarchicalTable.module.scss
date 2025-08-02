@@ -1,0 +1,116 @@
+.table__expandBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 8px;
+  color: #888;
+  transition: color 0.2s;
+  vertical-align: middle;
+  padding: 0;
+  line-height: 1;
+  &:hover {
+    color: #333;
+  }
+}
+$primary: #1890ff;
+$background-gradient: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+$table-bg: rgba(255, 255, 255, 0.95);
+$table-shadow: 0 4px 24px rgba(24, 144, 255, 0.08);
+$header-bg: #f0f7ff;
+$row-hover: #e6f7ff;
+$border-radius: 12px;
+
+// BEM: .hierarchical-table
+.hierarchical-table {
+  max-width: 800px;
+  margin: 48px auto;
+  background: $background-gradient;
+  padding: 32px;
+  border-radius: $border-radius;
+  box-shadow: $table-shadow;
+  position: relative;
+}
+
+// BEM: .hierarchical-table__card
+.hierarchical-table__card {
+  background: $table-bg;
+  border-radius: $border-radius;
+  box-shadow: $table-shadow;
+  padding: 16px;
+}
+
+.hierarchical-table__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: transparent;
+}
+.hierarchical-table__th,
+.hierarchical-table__td {
+  padding: 12px 18px;
+  text-align: left;
+}
+.hierarchical-table__th--header {
+  background: $header-bg;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.hierarchical-table__tr {
+  transition: background 0.2s;
+}
+.hierarchical-table__tr--hover {
+  background: $row-hover;
+}
+.hierarchical-table__tr--last td {
+  border-bottom: none;
+}
+.hierarchical-table__input[type="number"] {
+  border: 1px solid #b3c6e0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 70px;
+  font-size: 1em;
+  background: #f7fbff;
+  transition: border 0.2s;
+}
+.hierarchical-table__input--focus[type="number"]:focus {
+  border-color: $primary;
+  outline: none;
+}
+.hierarchical-table__button {
+  background: $primary;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  margin: 0 2px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  min-width: 120px;
+  display: inline-block;
+}
+.hierarchical-table__button-group {
+  display: flex;
+  gap: 8px;
+}
+.hierarchical-table__button--hover:hover {
+  background: color-mix(in srgb, $primary 80%, black 20%);
+  box-shadow: 0 4px 16px rgba(24, 144, 255, 0.12);
+}
+.hierarchical-table__tr--grand-total {
+  font-weight: bold;
+  background: #e0f7fa;
+  font-size: 1.1em;
+}
+.hierarchical-table__td--label {
+  font-weight: 500;
+}
+.hierarchical-table__td--variance {
+  font-size: 0.98em;
+  color: #ff9800;
+  font-weight: 500;
+}
